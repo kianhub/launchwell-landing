@@ -40,7 +40,7 @@ export default function Waitlist() {
             name="email"
             type="email"
             placeholder="start@launchwell.ai"
-            className="h-12 bg-warm-white border-slate-black text-[#121212] placeholder:text-[#121212]]/80 focus-visible:ring-[#E50914]"
+            className="h-12 rounded-xl bg-warm-white border-slate-black text-[#121212] placeholder:text-[#121212]]/80 focus-visible:ring-[#E50914]"
             required
           />
           <HeroButton

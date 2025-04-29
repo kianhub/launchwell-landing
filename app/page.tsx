@@ -9,11 +9,14 @@ import {
   CheckCircle,
   Hammer,
   TrendingUp,
+  Facebook,
 } from "lucide-react";
 import { XIcon } from "@/components/icons/XIcon";
 import ModuleCards from "@/components/ModuleCards";
-import { ScrollToWaitlistButton } from "@/components/ScrollToWaitlistButton";
 import Waitlist from "@/components/Waitlist";
+import { RocketFill } from "@/components/icons/RocketFill";
+import { ThreadsIcon } from "@/components/icons/ThreadsIcon";
+import { HeroClickButton } from "@/components/HeroClickButton";
 
 export default function Home() {
   return (
@@ -29,12 +32,12 @@ export default function Home() {
               <h1 className="mb-4 text-6xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                 Ideate, Validate, Build,{" "}
                 <span className="underline decoration-[#E50914] decoration-4 font-bold inline-flex items-center gap-2">
-                  <Rocket className="h-12 w-12 text-[#E50914]" />
+                  <RocketFill className="h-12 w-12 text-[#E50914]" />
                   Launch
                 </span>
                 , Scale.
               </h1>
-              <p className="mb-10 text-xl text-[#121212]">
+              <p className="mb-4 text-xl text-[#121212]">
                 Launchwell helps anyone turn ideas into investor-ready startups.
                 From idea to capital—all in one streamlined, AI-powered
                 platform.
@@ -95,7 +98,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4 max-w-4xl text-center">
               No fuzz. No noise. Focus on your idea.
             </h2>
-            <ScrollToWaitlistButton>Put me on the List</ScrollToWaitlistButton>
+            <HeroClickButton text="Let's Get Started" id="scrollUp" />
           </div>
         </div>
       </section>
@@ -110,17 +113,44 @@ export default function Home() {
               something more towards socials. Maybe leave out entirely?
             </p> */}
             <div className="flex space-x-4 justify-center">
-              <Link href="#" className="text-[#121212]/70 hover:text-[#E50914]">
+              <Link
+                href="https://x.com/launchwellai"
+                className="text-[#121212]/70 hover:text-[#E50914]"
+                target="_blank"
+              >
                 <XIcon className="h-5 w-5" />
                 <span className="sr-only">X</span>
               </Link>
-              <Link href="#" className="text-[#121212]/70 hover:text-[#E50914]">
+              <Link
+                href="https://www.threads.com/@launchwellai"
+                className="text-[#121212]/70 hover:text-[#E50914]"
+                target="_blank"
+              >
+                <ThreadsIcon className="h-5 w-5" />
+                <span className="sr-only">Threads</span>
+              </Link>
+              <Link
+                href="#"
+                className="text-[#121212]/70 hover:text-[#E50914]"
+                target="_blank"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-[#121212]/70 hover:text-[#E50914]">
+              <Link
+                href="https://www.instagram.com/launchwellai"
+                className="text-[#121212]/70 hover:text-[#E50914]"
+                target="_blank"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
+              </Link>
+              <Link
+                href="https://www.facebook.com/people/Launchwell-AI/61574772132661/"
+                className="text-[#121212]/70 hover:text-[#E50914]"
+              >
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
               </Link>
             </div>
           </div>

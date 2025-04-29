@@ -8,6 +8,8 @@ import {
   TrendingUp,
   ToyBrick,
 } from "lucide-react";
+import { LaunchwellRocket } from "./icons/LaunchwellRocket";
+import { RocketFill } from "./icons/RocketFill";
 
 interface ModuleCardProps {
   title: string;
@@ -77,7 +79,7 @@ export default function ModuleCards() {
           story people already believe—and a product they’ve been waiting for.
         </>
       ),
-      icon: <Rocket className="w-12 h-12 text-[#E50914]" />,
+      icon: <RocketFill className="w-12 h-12 text-[#E50914]" />,
     },
     {
       title: "Scale",
