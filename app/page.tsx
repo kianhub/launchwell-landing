@@ -96,9 +96,9 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="mx-auto relative flex flex-col items-center">
             <h2 className="text-4xl font-bold mb-4 max-w-4xl text-center">
-              No fuzz. No noise. Focus on your idea.
+              Let's Build.
             </h2>
-            <HeroClickButton text="Let's Get Started" id="scrollUp" />
+            <HeroClickButton text="Get Started" id="scrollUp" />
           </div>
         </div>
       </section>
