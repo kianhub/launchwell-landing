@@ -22,7 +22,10 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <header className="mx-auto flex w-full items-center justify-between p-4 px-3 lg:px-4">
-        <span className="text-xl font-bold text-[#E50914]">Launchwell</span>
+        <div className="flex items-center gap-2">
+          <RocketFill className="h-6 w-6 text-[#E50914]" />
+          <span className="text-xl font-bold text-[#E50914]">Launchwell</span>
+        </div>
       </header>
 
       <main className="min-h-screen p-4 md:p-8">
