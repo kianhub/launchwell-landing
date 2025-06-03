@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const interRegular = Inter({
   variable: "--font-inter-regular",
@@ -39,6 +40,7 @@ export default function RootLayout({
         className={`${interRegular.variable} ${interLight.variable} ${satoshiBold.variable} ${satoshiMedium.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
